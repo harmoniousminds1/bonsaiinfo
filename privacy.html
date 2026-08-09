@@ -25,7 +25,7 @@
 <body>
   <div class="wrap">
     <h1>Privacy Policy</h1>
-    <p class="meta">Bonsai · Last updated 30 July 2026</p>
+    <p class="meta">Bonsai · Last updated 9 August 2026</p>
 
     <div class="lead">
       <strong>The short version:</strong> Bonsai is free and kept free by ads. Everything you
@@ -33,7 +33,8 @@
       upload it, sell it, or verify it. To show ads and handle optional purchases we rely on
       two well-known services, Google AdMob and RevenueCat, described below. And if you
       choose to share a tree with a friend (Partner Mode), that uses an optional account —
-      with no email address and no password — also described below. That’s the complete
+      which may include your email address if you sign in with Apple or Google, or none at
+      all if you use the anonymous option — also described below. That’s the complete
       picture.
     </div>
 
@@ -65,14 +66,24 @@
 
     <h2>Partner Mode (optional)</h2>
     <p>Bonsai is single-player and account-free by default. If you choose to tend a shared
-      tree with a friend (a “pact”), you sign in one of two ways — <strong>Sign in with
-      Apple</strong>, or an <strong>anonymous account</strong> that collects no identifying
-      information at all. <strong>We never ask for, receive, or store your email address</strong>,
-      and there are no passwords. If you use Sign in with Apple you may choose Apple’s “Hide My
-      Email”; either way we only ever see an opaque account identifier.</p>
+      tree with a friend (a “pact”), you sign in one of three ways:</p>
+    <ul>
+      <li><strong>Sign in with Apple</strong> — Apple sends us an account identifier and, if
+        you allow it, your email address. Choosing Apple’s <strong>“Hide My Email”</strong>
+        means we only ever receive a relay address, never your real one.</li>
+      <li><strong>Sign in with Google</strong> — Google sends us an account identifier and
+        the email address of the account you pick, which is stored by our authentication
+        provider so you can sign back in on another device.</li>
+      <li><strong>Anonymous account</strong> — no email, no name, no identifying information
+        of any kind. Tied to that one installation.</li>
+    </ul>
+    <p>There are never any passwords. We never use your email address for marketing, and we
+      never sell or share it. If you would rather we held no email at all, use the anonymous
+      option — everything in Partner Mode works the same way.</p>
     <p>On our backend provider <strong>Supabase</strong> we store only what’s needed to keep
-      you both in sync: the display name you type, the shared tree’s state, and which partner
-      fed it and when. <strong>You can delete your account and all of its data at any time</strong>
+      you both in sync: your account identifier (and email address, where the sign-in method
+      above provides one), the display name you type, the shared tree’s state, and which
+      partner fed it and when. <strong>You can delete your account and all of its data at any time</strong>
       from within the app or by emailing us. Single-player never requires an account.</p>
 
     <h2>What we never do</h2>
